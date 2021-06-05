@@ -41,3 +41,5 @@ Payment.create = (newCustomer, result) => {
     result(null, { id: res.insertId, ...newCustomer });
   });
 };
+
+module.exports = Payment;
