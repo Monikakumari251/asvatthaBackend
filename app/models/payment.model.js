@@ -15,20 +15,6 @@ const Payment =function(payment) {
   this.amount = payment.amount;
 };
 
-// const Payment =function(payment) {
-//     name: req.body.name,
-//     mobile: req.body.mobile,
-//     village: req.body.village,
-//     district: req.body.district,
-//     city: req.body.city,
-//     state: req.body.state,
-//     email: req.body.email,
-//     address: req.body.address,
-//     aadhar: req.body.aadhar,
-//     amount: req.body.amount,
-//     pan_card: req.body.pan_card
-// };
-
 Payment.create = (newCustomer, result) => {
   sql.query("INSERT INTO tbl_payment SET ?", newCustomer, (err, res) => {
     if (err) {

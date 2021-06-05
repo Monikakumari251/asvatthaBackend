@@ -17,9 +17,9 @@ exports.create = (req, res) => {
         gender: req.body.gender,
         country: req.body.country,
         state: req.body.state,
-      email: req.body.email,
-      pin_code: req.body.pincode,
-      pan_card: req.body.pan_card
+        email: req.body.email,
+        pin_code: req.body.pin_code,
+        pan_card: req.body.pan_card
     });
   
     // Save Customer in the database
