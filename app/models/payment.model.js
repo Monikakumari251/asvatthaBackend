@@ -2,17 +2,17 @@ const sql = require("./db.js");
 
 // constructor
 const Payment =function(payment) {
-  this.name = volunteer.name;
-  this.mobile = volunteer.mobile;
-  this.village = volunteer.village;
-  this.email = volunteer.email;
-  this.district = volunteer.district;
-  this.pan_card = volunteer.pan_card;
-  this.city = volunteer.city;
-  this.state = volunteer.state;
-  this.address = volunteer.address;
-  this.aadhar = volunteer.aadhar;
-  this.amount = volunteer.amount;
+  this.name = payment.name;
+  this.mobile = payment.mobile;
+  this.village = payment.village;
+  this.email = payment.email;
+  this.district = payment.district;
+  this.pan_card = payment.pan_card;
+  this.city = payment.city;
+  this.state = payment.state;
+  this.address = payment.address;
+  this.aadhar = payment.aadhar;
+  this.amount = payment.amount;
 };
 
 // const Payment =function(payment) {
