@@ -7,6 +7,8 @@ const Payment = require("../models/payment.model");
 // const router = express.Router();
 
 exports.post = async(req, res) => {
+  console.log('reqreqreq', req);
+  
     try {
         const instance = new Razorpay({
             key_id: process.env.RAZORPAY_KEY_ID,
