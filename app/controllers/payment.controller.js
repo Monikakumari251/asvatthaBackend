@@ -7,7 +7,7 @@ const Payment = require("../models/payment.model");
 // const router = express.Router();
 
 exports.post = async(req, res) => {
-  console.log('reqreqreq', req);
+  console.log('reqreqreq', req.body.amount*100);
   
     try {
         const instance = new Razorpay({
@@ -16,7 +16,7 @@ exports.post = async(req, res) => {
         });
 
         const options = {
-            amount: 100, // amount in smallest currency unit
+            amount: req.body.amount*100, // amount in smallest currency unit
             currency: "INR",
             receipt: "receipt_order_74394",
         };

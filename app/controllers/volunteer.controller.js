@@ -18,8 +18,8 @@ exports.create = (req, res) => {
         country: req.body.country,
         state: req.body.state,
         email: req.body.email,
-        pin_code: req.body.pin_code,
-        pan_card: req.body.pan_card
+        pin_code: req.body.pinCode,
+        pan_card: req.body.panCard
     });
   
     // Save Customer in the database

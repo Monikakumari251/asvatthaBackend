@@ -1,4 +1,4 @@
-const sql = require("./db.js");
+// const sql = require("./db.js");
 
 // constructor
 const Payment =function(payment) {
@@ -15,17 +15,17 @@ const Payment =function(payment) {
   this.amount = payment.amount;
 };
 
-Payment.create = (newCustomer, result) => {
-  sql.query("INSERT INTO tbl_payment SET ?", newCustomer, (err, res) => {
-    if (err) {
-      console.log("error: ", err);
-      result(err, null);
-      return;
-    }
+// Payment.create = (newCustomer, result) => {
+//   sql.query("INSERT INTO tbl_payment SET ?", newCustomer, (err, res) => {
+//     if (err) {
+//       console.log("error: ", err);
+//       result(err, null);
+//       return;
+//     }
 
-    console.log("created payment id: ", { id: res.insertId, ...newCustomer });
-    result(null, { id: res.insertId, ...newCustomer });
-  });
-};
+//     console.log("created payment id: ", { id: res.insertId, ...newCustomer });
+//     result(null, { id: res.insertId, ...newCustomer });
+//   });
+// };
 
 module.exports = Payment;
